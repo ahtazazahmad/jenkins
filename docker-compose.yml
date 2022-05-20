@@ -1,0 +1,11 @@
+version: "3.0"
+services:
+  backend:
+    container_name: 'jazo'
+    build: .
+    ports:
+      - "8000:5241"
+  oho:
+   build: ./new
+   ports:
+     - "9900:5245"
